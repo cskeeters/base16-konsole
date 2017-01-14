@@ -1,0 +1,7 @@
+default:
+    extension: .colorspace
+    output: kde4-konsole-vim
+
+standard:
+    extension: .colorspace
+    output: kde4-konsole
