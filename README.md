@@ -19,14 +19,16 @@ Currently it includes two templates and output folders.
 To install system-wide, run the following commands:
 
 ```bash
-cd kde4-konsole-vim
+git clone https://github.com/cskeeters/base16-konsole
+cd base16-konsole/kde4-konsole-vim
 cp *.colorspace  /usr/share/kde4/apps/konsole/
 ```
 
 To install for only your user, run:
 
 ```bash
-cd kde4-konsole-vim
+git clone https://github.com/cskeeters/base16-konsole
+cd base16-konsole/kde4-konsole-vim
 cp *.colorspace  ~/.kde4/apps/konsole/
 ```
 
