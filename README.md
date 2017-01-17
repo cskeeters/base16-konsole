@@ -106,3 +106,4 @@ base16-shell uses this corresponding template to set the color:
 [bvi]: https://github.com/chriskempson/base16-vim#installation
 [airline-bold]: https://github.com/vim-airline/vim-airline/blob/45d77ca90953e191e4ac140b964683c2aecef069/autoload/airline/themes.vim#L51
 [konbug]: https://bugs.kde.org/show_bug.cgi?id=344181
+[osc]: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Operating-System-Commands
