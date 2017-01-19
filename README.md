@@ -42,6 +42,33 @@ Follow the instructions for [installation of base16-vim][bvi].  **Do not set bas
 
 In RHEL6, vim shows my airline status with bright yellow forground colors instead of darker colors.  It's using `ctermfg=10`, but 10 seems to be set correctly.  I'm not sure why, but changing term=bold to term=NONE fixes the issue.  The easiest way to do this is to remove `bold` from the string value on [this line][airline-bold].
 
+### junegunn/fzf
+
+If you use [fzf][fzf] and want colorization to look right, you'll need something like this in your `.bashrc`.
+
+```sh
+if [[ $TERM =~ konsole.* ]]; then
+    export FZF_DEFAULT_OPTS='--color fg+:5,hl+:6'
+fi
+```
+
+This is due to fzf using intense versions of colors.  Since most are dark, the selected item winds up being hard to see.  With `FZF_DEFAULT_OPTS` as mentioned, the selected item will be white and matching text will be orange.  Those are the only good colors to use.
+
+### ls colorization
+
+With kde4-konsole-vim, `ls --color` shows many items in a dark color that is hard to see.  To correct this, you need to set the `LS_COLORS` environment variable to not use bright intensity colors.  You can do this most easily with `dircolors`.  See the [dir_colors manpage][dir_colors] for additional details.  The process for removing intensity code (01) from `LS_COLORS` is:
+
+1. Copy /etc/DIR_COLORS to ~/.dir_colors
+1. Edit ~/.dir_colors and modify entries to remove `01;`.  For example, `DIR 01;34` should become, `DIR 34`.
+1. Logout and log back in, or run `eval $(dircolors ~/.dir_colors)`
+
+A base16-vim compatible file is available for you to download if you don't need any further customization.
+
+```sh
+cd ~
+curl -OL https://gist.githubusercontent.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d/raw/.dir_colors
+```
+
 ### Advanced Configuration
 
 If you are like me and want a single `.vimrc` to function for konsole (in 16 color mode) and another terminal which supports 256 colors, you can configure konsole's environment to set `TERM=konsole` and then only set base16colorspace when TERM does not start with konsole
@@ -107,3 +134,5 @@ base16-shell uses this corresponding template to set the color:
 [airline-bold]: https://github.com/vim-airline/vim-airline/blob/45d77ca90953e191e4ac140b964683c2aecef069/autoload/airline/themes.vim#L51
 [konbug]: https://bugs.kde.org/show_bug.cgi?id=344181
 [osc]: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Operating-System-Commands
+[fzf]: https://github.com/junegunn/fzf
+[dir_colors]: https://linux.die.net/man/5/dir_color://linux.die.net/man/5/dir_colors
