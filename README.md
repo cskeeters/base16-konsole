@@ -62,7 +62,7 @@ With kde4-konsole-vim, `ls --color` shows many items in a dark color that is har
 1. Edit ~/.dir_colors and modify entries to remove `01;`.  For example, `DIR 01;34` should become, `DIR 34`.
 1. Logout and log back in, or run `eval $(dircolors ~/.dir_colors)`
 
-A base16-vim compatible file is available for you to download if you don't need any further customization.
+A [base16-vim compatible file][dcgist] is available for you to download if you don't need any further customization.
 
 ```sh
 cd ~
@@ -136,3 +136,4 @@ base16-shell uses this corresponding template to set the color:
 [osc]: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Operating-System-Commands
 [fzf]: https://github.com/junegunn/fzf
 [dir_colors]: https://linux.die.net/man/5/dir_color://linux.die.net/man/5/dir_colors
+[dcgist]: https://gist.github.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d
