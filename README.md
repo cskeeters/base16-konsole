@@ -69,6 +69,27 @@ cd ~
 curl -OL https://gist.githubusercontent.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d/raw/.dir_colors
 ```
 
+### Mercurial Configuration
+
+If you use the [color extension][hgc] for hg, you'll need to customize the colors so that bold is not used.  Add this to your `~/.hgrc`.
+
+    [color]
+    status.modified = blue
+    status.added = green
+    status.removed = red
+    status.deleted = cyan
+    status.unknown = magenta
+    status.ignored = yellow
+
+    diff.extended = cyan
+    diff.file_a = red
+    diff.file_b = green
+    diff.trailingwhitespace = red_background
+
+    qseries.applied = blue underline
+    qseries.unapplied = yellow
+    qseries.missing = red
+
 ### Advanced Configuration
 
 If you are like me and want a single `.vimrc` to function for konsole (in 16 color mode) and another terminal which supports 256 colors, you can configure konsole's environment to set `TERM=konsole` and then only set base16colorspace when TERM does not start with konsole
@@ -137,3 +158,4 @@ base16-shell uses this corresponding template to set the color:
 [fzf]: https://github.com/junegunn/fzf
 [dir_colors]: https://linux.die.net/man/5/dir_color://linux.die.net/man/5/dir_colors
 [dcgist]: https://gist.github.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d
+[hgc]: https://www.mercurial-scm.org/wiki/ColorExtension
