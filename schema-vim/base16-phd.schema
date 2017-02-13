@@ -1,0 +1,28 @@
+# schema for konsole (KDE3)
+# put in ~/.kde/share/apps/konsole/
+
+title Base16 PhD
+
+#   slot    transparent bold
+#      | red grn blu  | |
+#      V V--color--V  V V
+color  0 184 187 194  0 0 # 0 - Foreground Color
+color  1   6  18  41  1 0 # 1 - Background Color
+color  2   6  18  41  0 0 # 2 - Color 0 (black)
+color  3 208 115  70  0 0 # 3 - Color 1 (red)
+color  4 153 191  82  0 0 # 3 - Color 2 (green)
+color  5 251 212  97  0 0 # 3 - Color 3 (yellow)
+color  6  82 153 191  0 0 # 3 - Color 4 (blue)
+color  7 153 137 204  0 0 # 3 - Color 5 (magenta)
+color  8 114 185 191  0 0 # 3 - Color 6 (cyan)
+color  9 184 187 194  0 0 # 3 - Color 7 (white)
+color 10 184 187 194  0 1 # 3 - Foreground Intensive Color
+color 11   6  18  41  1 0 # 3 - Background Intensive Color
+color 12 113 120 133  0 0 # 3 - Color 0 Intensive (grey)
+color 13 240 160   0  0 0 # 3 - Color 1 Intensive (light red)
+color 14  42  52  72  0 0 # 3 - Color 2 Intensive (light green)
+color 15  77  86 102  0 0 # 3 - Color 3 Intensive (light yellow)
+color 16 154 153 163  0 0 # 3 - Color 4 Intensive (light blue)
+color 17 219 221 224  0 0 # 3 - Color 5 Intensive (light magenta)
+color 18 176 128  96  0 0 # 3 - Color 6 Intensive (light cyan)
+color 19 255 255 255  0 0 # 3 - Color 7 Intensive (white)

@@ -1,7 +1,11 @@
 default:
-    extension: .colorspace
-    output: kde4-konsole-vim
+    extension: .colorscheme
+    output: colorscheme-vim
 
 standard:
-    extension: .colorspace
-    output: kde4-konsole
+    extension: .colorscheme
+    output: colorsheme
+
+kde3vim:
+    extension: .schema
+    output: schema-vim
