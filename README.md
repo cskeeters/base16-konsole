@@ -104,6 +104,12 @@ if $TERM !~# "konsole.*"
 endif
 ```
 
+# Building
+
+Most users won't need to rebuild this repository as the color files you need for konsole are generated in committed to this template repository.
+
+This template repository can only be built with [cskeeters/base16-builder-php](https://github.com/cskeeters/base16-builder-php) with [this fixed width modification](https://github.com/cskeeters/base16-builder-php/commit/f13a88c9a460c9377b8b27d401996e4f41ebf748).  This enables KDE3's schema format to align properly.
+
 # Technical Details
 
 ANSI colors can be set in a terminal in two ways.
