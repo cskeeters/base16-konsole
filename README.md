@@ -151,7 +151,7 @@ base16-shell uses this corresponding template to set the color:
 
     printf_template='\033]4;%d;rgb:%s\033\\'
 
-[wikicolors]: https://en.wikipedia.org/wiki/ANSI_escape_code#Color://en.wikipedia.org/wiki/ANSI_escape_code#Colors
+[wikicolors]: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 [testcolor]: https://chriskempson.github.io/base16/
 [itermtempl]: https://github.com/chriskempson/base16-builder/blob/master/templates/iterm2/dark.itermcolors.erb
 [bv]: https://github.com/chriskempson/base16-vim
