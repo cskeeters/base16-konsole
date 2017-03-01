@@ -4,10 +4,6 @@ This is a [base16 template repository][tr] for konsole.
 
 Currently it includes two templates and corresponding output folders.
 
-`*.colorscheme` files are designed to work with the version of konsole included with KDE4 and KDE5.  For `*.schema` files designed to work with the version of konsole included with KDE3, see [base16-konsole-kde3][kde3].
-
-[kde3]: https://github.com/cskeeters/base16-konsole-kde3
-
 ## colorscheme-vim
 
 The files in `colorscheme-vim` are designed to be compatible with [base16-vim][bv].  The means the "intense" colors (8-15) have been repurposed (similarly to [iterm2/dark.itermcolors.erb][itermtempl]) to provide shades of grey and yellow colors needed for a good looking vim interface.  Normally [ansi 9 looks red][wikicolors], but instead it's mapped to *base03* (grey) for base16-vim.  To make the vim colorscheme compatible with this mapping, you must leave `base16colorspace` unset in `.vimrc`.  Other applications like prompts and `ls` **will look off** as a consequence - although this can be mitigated as described below.
@@ -27,7 +23,11 @@ KDE 5       | User Only    | `~/.local/share/konsole`
 KDE 4       | System Wide  | `/usr/share/kde4/apps/konsole`
 KDE 4       | User Only    | `~/.kde4/apps/konsole/`
 
+NOTE: For `*.schema` files designed to work with the version of konsole included with KDE3, see [base16-konsole-kde3][kde3].
+
 You must restart konsole, then you can select the theme you would like to use through the menus.
+
+[kde3]: https://github.com/cskeeters/base16-konsole-kde3
 
 ## Vim Configuration
 
