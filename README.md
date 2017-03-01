@@ -1,8 +1,6 @@
 # Base16 Konsole
 
-This is a [base16 template repository][tr] for konsole.
-
-Currently it includes two templates and corresponding output folders.
+This is a [base16 template repository][tr] for konsole.  Currently it includes two templates and corresponding output folders.
 
 ## colorscheme-vim
 
