@@ -4,7 +4,9 @@ This is a [base16 template repository][tr] for konsole.
 
 Currently it includes two templates and corresponding output folders.
 
-`*.colorscheme` files are designed to work with the version of konsole included with KDE4 and KDE5.  `*.schema` files are designed to work with the version of konsole included with KDE3.
+`*.colorscheme` files are designed to work with the version of konsole included with KDE4 and KDE5.  For `*.schema` files designed to work with the version of konsole included with KDE3, see [base16-konsole-kde3][kde3].
+
+[kde3]: https://github.com/cskeeters/base16-konsole-kde3
 
 ## colorscheme-vim
 
@@ -97,12 +99,6 @@ if $TERM !~# "konsole.*"
     let base16colorspace=256
 endif
 ```
-
-# Building
-
-Most users won't need to rebuild this repository as the color files you need for konsole are generated and committed to this template repository.
-
-This template repository can only be built with [cskeeters/base16-builder-php](https://github.com/cskeeters/base16-builder-php) with [this fixed width modification](https://github.com/cskeeters/base16-builder-php/commit/f13a88c9a460c9377b8b27d401996e4f41ebf748).  This enables KDE3's schema format to align properly.
 
 # Technical Details
 
