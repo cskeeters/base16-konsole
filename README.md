@@ -2,7 +2,7 @@
 
 This is a [base16 template repository][tr] for konsole.
 
-Currently it includes three templates and corresponding output folders.
+Currently it includes two templates and corresponding output folders.
 
 `*.colorscheme` files are designed to work with the version of konsole included with KDE4 and KDE5.  `*.schema` files are designed to work with the version of konsole included with KDE3.
 
@@ -14,10 +14,6 @@ The files in `colorscheme-vim` are designed to be compatible with [base16-vim][b
 
 The files in `colorscheme` will *not* work with [base16-vim][bv], but colors will show up correctly in prompts and the colored output of `ls`.
 
-## schema
-
-The files in `schema` will work with [base16-vim][bv].  Only use these if you use KDE3 (RHEL5)
-
 # Installation
 
 To install system-wide, copy the desired files (not the folder) into the appropriate folder.  You can download and install only one file if you know what theme you want to use.
@@ -28,8 +24,6 @@ KDE 5       | System Wide  | `/usr/share/konsole`
 KDE 5       | User Only    | `~/.local/share/konsole`
 KDE 4       | System Wide  | `/usr/share/kde4/apps/konsole`
 KDE 4       | User Only    | `~/.kde4/apps/konsole/`
-KDE 3       | System Wide  | `/usr/share/apps/konsole/`
-KDE 3       | User Only    | `~/.kde/apps/konsole/`
 
 You must restart konsole, then you can select the theme you would like to use through the menus.
 

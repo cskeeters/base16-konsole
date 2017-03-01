@@ -1,11 +1,6 @@
 default:
     extension: .colorscheme
-    output: colorscheme-vim
-
-standard:
+    output: colorscheme
+vim:
     extension: .colorscheme
-    output: colorsheme
-
-kde3vim:
-    extension: .schema
-    output: schema-vim
+    output: colorscheme-vim
