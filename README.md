@@ -2,9 +2,15 @@
 
 This is a [base16 template repository][tr] for konsole.  Currently it includes two templates and corresponding output folders.
 
+[tr]: https://github.com/chriskempson/base16#template-repositories
+
 ## colorscheme-vim
 
 The files in `colorscheme-vim` are designed to be compatible with [base16-vim][bv].  The means the "intense" colors (8-15) have been repurposed (similarly to [iterm2/dark.itermcolors.erb][itermtempl]) to provide shades of grey and yellow colors needed for a good looking vim interface.  Normally [ansi 9 looks red][wikicolors], but instead it's mapped to *base03* (grey) for base16-vim.  To make the vim colorscheme compatible with this mapping, you must leave `base16colorspace` unset in `.vimrc`.  Other applications like prompts and `ls` **will look off** as a consequence - although this can be mitigated as described below.
+
+[bv]: https://github.com/chriskempson/base16-vim
+[itermtempl]: https://github.com/chriskempson/base16-builder/blob/master/templates/iterm2/dark.itermcolors.erb
+[wikicolors]: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
 
 ## colorscheme
 
@@ -31,9 +37,13 @@ You must restart konsole, then you can select the theme you would like to use th
 
 Follow the instructions for [installation of base16-vim][bvi].  **Do not set base16colorspace!**
 
+[bvi]: https://github.com/chriskempson/base16-vim#installation
+
 ### Airline
 
 In RHEL6, vim shows my airline status with bright yellow forground colors instead of darker colors.  It's using `ctermfg=10`, but 10 seems to be set correctly.  I'm not sure why, but changing term=bold to term=NONE fixes the issue.  The easiest way to do this is to remove `bold` from the string value on [this line][airline-bold].
+
+[airline-bold]: https://github.com/vim-airline/vim-airline/blob/45d77ca90953e191e4ac140b964683c2aecef069/autoload/airline/themes.vim#L51
 
 ### junegunn/fzf
 
@@ -46,6 +56,8 @@ fi
 ```
 
 This is due to fzf using intense versions of colors.  Since most are dark, the selected item winds up being hard to see.  With `FZF_DEFAULT_OPTS` as mentioned, the selected item will be white and matching text will be orange.  Those are the only good colors to use.
+
+[fzf]: https://github.com/junegunn/fzf
 
 ### ls colorization
 
@@ -61,6 +73,9 @@ A [base16-vim compatible file][dcgist] is available for you to download if you d
 cd ~
 curl -OL https://gist.githubusercontent.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d/raw/.dir_colors
 ```
+
+[dir_colors]: https://linux.die.net/man/5/dir_color://linux.die.net/man/5/dir_colors
+[dcgist]: https://gist.github.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d
 
 ### Mercurial Configuration
 
@@ -82,6 +97,8 @@ If you use the [color extension][hgc] for hg, you'll need to customize the color
     qseries.applied = blue underline
     qseries.unapplied = yellow
     qseries.missing = red
+
+[hgc]: https://www.mercurial-scm.org/wiki/ColorExtension
 
 ### Advanced Configuration
 
@@ -133,22 +150,11 @@ Under *Ps = 4*, you can read.
 
 [man 3 xparsecolor][xpc] shows under *Color Names* supporting the `rgb:<red>/<green>/<blue>` format.
 
-[xpc]: https://linux.die.net/man/3/xparsecolor
-
 base16-shell uses this corresponding template to set the color:
 
     printf_template='\033]4;%d;rgb:%s\033\\'
 
-[wikicolors]: https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
-[testcolor]: https://chriskempson.github.io/base16/
-[itermtempl]: https://github.com/chriskempson/base16-builder/blob/master/templates/iterm2/dark.itermcolors.erb
-[bv]: https://github.com/chriskempson/base16-vim
-[tr]: https://github.com/chriskempson/base16#template-repositories
-[bvi]: https://github.com/chriskempson/base16-vim#installation
-[airline-bold]: https://github.com/vim-airline/vim-airline/blob/45d77ca90953e191e4ac140b964683c2aecef069/autoload/airline/themes.vim#L51
 [konbug]: https://bugs.kde.org/show_bug.cgi?id=344181
 [osc]: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Operating-System-Commands
-[fzf]: https://github.com/junegunn/fzf
-[dir_colors]: https://linux.die.net/man/5/dir_color://linux.die.net/man/5/dir_colors
-[dcgist]: https://gist.github.com/cskeeters/aacd10c075d3c7092a5e4e36db34e62d
-[hgc]: https://www.mercurial-scm.org/wiki/ColorExtension
+[xpc]: https://linux.die.net/man/3/xparsecolor
+
