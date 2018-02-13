@@ -1,14 +1,14 @@
 [Background]
-Color=227,239,239
+Color=72,88,103
 
 [BackgroundIntense]
-Color=227,239,239
+Color=130,153,161
 
 [Color0]
-Color=227,239,239
+Color=72,88,103
 
 [Color0Intense]
-Color=227,239,239
+Color=130,153,161
 
 [Color1]
 Color=179,134,134
@@ -47,18 +47,18 @@ Color=134,179,179
 Color=134,179,179
 
 [Color7]
-Color=109,130,142
+Color=176,197,200
 
 [Color7Intense]
-Color=72,88,103
+Color=227,239,239
 
 [Foreground]
-Color=109,130,142
+Color=176,197,200
 
 [ForegroundIntense]
-Color=72,88,103
+Color=227,239,239
 
 [General]
-Description=Base16 Brush Trees
+Description=Base16 Brush Trees Dark
 Opacity=1
 Wallpaper=

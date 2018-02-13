@@ -1,64 +1,64 @@
 [Background]
-Color=35,31,32
+Color=21,23,24
 
 [BackgroundIntense]
-Color=35,31,32
+Color=65,83,91
 
 [Color0]
-Color=35,31,32
+Color=21,23,24
 
 [Color0Intense]
-Color=35,31,32
+Color=65,83,91
 
 [Color1]
-Color=238,46,36
+Color=205,63,69
 
 [Color1Intense]
-Color=238,46,36
+Color=205,63,69
 
 [Color2]
-Color=0,133,62
+Color=159,202,86
 
 [Color2Intense]
-Color=0,133,62
+Color=159,202,86
 
 [Color3]
-Color=255,210,4
+Color=230,205,105
 
 [Color3Intense]
-Color=255,210,4
+Color=230,205,105
 
 [Color4]
-Color=0,157,220
+Color=85,181,219
 
 [Color4Intense]
-Color=0,157,220
+Color=85,181,219
 
 [Color5]
-Color=152,0,93
+Color=160,116,196
 
 [Color5Intense]
-Color=152,0,93
+Color=160,116,196
 
 [Color6]
-Color=133,206,188
+Color=85,219,190
 
 [Color6Intense]
-Color=133,206,188
+Color=85,219,190
 
 [Color7]
-Color=217,216,216
+Color=214,214,214
 
 [Color7Intense]
 Color=255,255,255
 
 [Foreground]
-Color=217,216,216
+Color=214,214,214
 
 [ForegroundIntense]
 Color=255,255,255
 
 [General]
-Description=Base16 London Tube
+Description=Base16 Seti UI
 Opacity=1
 Wallpaper=

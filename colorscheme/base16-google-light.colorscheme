@@ -2,13 +2,13 @@
 Color=255,255,255
 
 [BackgroundIntense]
-Color=255,255,255
+Color=180,183,180
 
 [Color0]
 Color=255,255,255
 
 [Color0Intense]
-Color=255,255,255
+Color=180,183,180
 
 [Color1]
 Color=204,52,43
